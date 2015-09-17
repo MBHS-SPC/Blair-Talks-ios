@@ -13,6 +13,11 @@
 		22B71AFA1BAA3C0600FD3F2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B71AF91BAA3C0600FD3F2B /* Images.xcassets */; };
 		22B71AFD1BAA3C0600FD3F2B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B71AFB1BAA3C0600FD3F2B /* LaunchScreen.xib */; };
 		22B71B091BAA3C0600FD3F2B /* Blair_TalksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B71B081BAA3C0600FD3F2B /* Blair_TalksTests.swift */; };
+		22B71B131BAA3FD700FD3F2B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B71B121BAA3FD700FD3F2B /* TableViewController.swift */; };
+		22B71B151BAA40FE00FD3F2B /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B71B141BAA40FE00FD3F2B /* MainTableViewController.swift */; };
+		22B71B191BAA471F00FD3F2B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B71B181BAA471F00FD3F2B /* MenuView.swift */; };
+		22B71B1C1BAA4EFB00FD3F2B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B71B1A1BAA4EFB00FD3F2B /* PlayerViewController.swift */; };
+		22B71B1D1BAA4EFB00FD3F2B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B71B1B1BAA4EFB00FD3F2B /* PlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		22B71B021BAA3C0600FD3F2B /* Blair TalksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blair TalksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B71B071BAA3C0600FD3F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22B71B081BAA3C0600FD3F2B /* Blair_TalksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blair_TalksTests.swift; sourceTree = "<group>"; };
+		22B71B121BAA3FD700FD3F2B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		22B71B141BAA40FE00FD3F2B /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		22B71B181BAA471F00FD3F2B /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		22B71B1A1BAA4EFB00FD3F2B /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerViewController.swift; path = ../PlayerViewController.swift; sourceTree = "<group>"; };
+		22B71B1B1BAA4EFB00FD3F2B /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerViewController.xib; path = ../PlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +87,14 @@
 		22B71AEF1BAA3C0600FD3F2B /* Blair Talks */ = {
 			isa = PBXGroup;
 			children = (
+				22B71B1A1BAA4EFB00FD3F2B /* PlayerViewController.swift */,
+				22B71B1B1BAA4EFB00FD3F2B /* PlayerViewController.xib */,
 				22B71AF21BAA3C0600FD3F2B /* AppDelegate.swift */,
 				22B71AF41BAA3C0600FD3F2B /* ViewController.swift */,
 				22B71AF61BAA3C0600FD3F2B /* Main.storyboard */,
+				22B71B181BAA471F00FD3F2B /* MenuView.swift */,
+				22B71B141BAA40FE00FD3F2B /* MainTableViewController.swift */,
+				22B71B121BAA3FD700FD3F2B /* TableViewController.swift */,
 				22B71AF91BAA3C0600FD3F2B /* Images.xcassets */,
 				22B71AFB1BAA3C0600FD3F2B /* LaunchScreen.xib */,
 				22B71AF01BAA3C0600FD3F2B /* Supporting Files */,
@@ -161,6 +176,7 @@
 				TargetAttributes = {
 					22B71AEC1BAA3C0600FD3F2B = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 8V7W9DJD8T;
 					};
 					22B71B011BAA3C0600FD3F2B = {
 						CreatedOnToolsVersion = 6.4;
@@ -193,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B71AF81BAA3C0600FD3F2B /* Main.storyboard in Resources */,
+				22B71B1D1BAA4EFB00FD3F2B /* PlayerViewController.xib in Resources */,
 				22B71AFD1BAA3C0600FD3F2B /* LaunchScreen.xib in Resources */,
 				22B71AFA1BAA3C0600FD3F2B /* Images.xcassets in Resources */,
 			);
@@ -212,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B71B151BAA40FE00FD3F2B /* MainTableViewController.swift in Sources */,
+				22B71B191BAA471F00FD3F2B /* MenuView.swift in Sources */,
 				22B71AF51BAA3C0600FD3F2B /* ViewController.swift in Sources */,
+				22B71B131BAA3FD700FD3F2B /* TableViewController.swift in Sources */,
 				22B71AF31BAA3C0600FD3F2B /* AppDelegate.swift in Sources */,
+				22B71B1C1BAA4EFB00FD3F2B /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +361,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Blair Talks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -350,7 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Blair Talks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +434,7 @@
 				22B71B0E1BAA3C0600FD3F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22B71B0F1BAA3C0600FD3F2B /* Build configuration list for PBXNativeTarget "Blair TalksTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +443,7 @@
 				22B71B111BAA3C0600FD3F2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
