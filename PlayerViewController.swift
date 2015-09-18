@@ -7,23 +7,28 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class PlayerViewController: UIViewController {
     
-
-    @IBOutlet weak var nameLabel: UILabel!
+    var catchphrase:AVAudioPlayer!
+    var soundName:String=""
+    var imgName:String=""
+    
+   // @IBOutlet weak var nameLabel: UILabel!
     var subjectName:String=""
+    @IBOutlet var backgroundView:UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        println(subjectName)
-        nameLabel.text="Hi"
-        if let text=nameLabel.text {
-            nameLabel.text!=subjectName
-        }
-        
+        setupNames()
+        //self.view.backgroundColor=UIColor(patternImage: UIImage(named: imgName)!)
+        backgroundView.frame=view.bounds
+        backgroundView.clipsToBounds=true
+        backgroundView.image=UIImage(named: imgName)
+        backgroundView.center=view.center
+        prepareAudio()
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,6 +36,59 @@ class PlayerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //initialize the sound and image filenames
+    func setupNames(){
+        //get the audio filename for a given person
+        switch subjectName{
+        case "Mr. Rose":
+            soundName="rose"
+            imgName="rose_"
+        case "Mr. Paul":
+            soundName="paul"
+            imgName="nothere_"
+        case "Mr. Pham":
+            soundName="pham_"
+            imgName="pham_"
+        case "Ms. Duval":
+            soundName="duval_"
+            imgName="duval_"
+        case "Mr. Giles":
+            soundName="giles_"
+            imgName="giles_"
+        case "Mr. Ostrander":
+            soundName="ostrander_"
+            imgName="ostrander"
+        case "Mr. Stein":
+            soundName="stein"
+            imgName="stein_"
+        case "Mr. Street":
+            soundName="street"
+            imgName="street_"
+        case "Mr. Schafer":
+            soundName="schafer_"
+            imgName="schafer_"
+        default:
+            soundName="nothere"
+            imgName="nothere_"
+        }
+        imgName+="small.jpg"
+    }
+    
+    func prepareAudio(){
+        var type:String="mp3"   //may be needed later
+        
+        //initialize the AVAudioPlayer
+        var path=NSBundle.mainBundle().pathForResource(soundName, ofType: type)
+        var error:NSError?
+        catchphrase=AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!), error: &error)
+    }
+    
+    //play catchphrase
+    @IBAction func playSound(sender: AnyObject) {
+        //println("about to play")
+        catchphrase.prepareToPlay()
+        catchphrase.play()
+    }
     
     /*
     // MARK: - Navigation

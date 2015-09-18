@@ -10,7 +10,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    let people=["Mr. Rose","Mr. Paul"]
+    let people=["Ms. Duval","Mr. Giles","Mr. Paul", "Mr. Pham","Mr. Rose","Mr. Schafer","Mr. Stein","Mr. Street"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,7 +106,7 @@ class MainTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         let indexPath=tableView.indexPathForSelectedRow()
         let currentCell=tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
-        println(currentCell.textLabel!.text!)
+        //println(currentCell.textLabel!.text!)
         let vc=segue.destinationViewController as! PlayerViewController
         vc.subjectName=currentCell.textLabel!.text!
     }

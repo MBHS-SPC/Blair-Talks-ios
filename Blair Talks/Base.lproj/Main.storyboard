@@ -44,7 +44,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cC-A1-stl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3931.5" y="505"/>
+            <point key="canvasLocation" x="3799.5" y="511"/>
         </scene>
         <!--Player-->
         <scene sceneID="zHk-cO-4FV">
@@ -58,35 +58,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqy-7R-gBv">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kqo-rX-GXv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="55" y="134" width="149" height="21"/>
+                                    <rect key="frame" x="16" y="46" width="400" height="600"/>
                                 </variation>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Jqy-7R-gBv"/>
+                                <exclude reference="Kqo-rX-GXv"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Jqy-7R-gBv"/>
+                                <include reference="Kqo-rX-GXv"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Qtk-zs-57C" appends="YES" id="Us2-5n-Whb"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="Jqy-7R-gBv" id="7mK-fr-0Vt"/>
+                        <outlet property="backgroundView" destination="Kqo-rX-GXv" id="jfU-z8-nlh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="If9-ue-0QQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Qtk-zs-57C">
+                    <connections>
+                        <action selector="playSound:" destination="z5i-bc-D4B" id="oXN-Kb-HWo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4675.5" y="515"/>
+            <point key="canvasLocation" x="4537.5" y="511"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KUf-XV-Htf">
