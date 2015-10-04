@@ -28,7 +28,11 @@ class PlayerViewController: UIViewController {
         backgroundView.clipsToBounds=true
         backgroundView.image=UIImage(named: imgName)
         backgroundView.center=view.center
-        prepareAudio()
+        do {
+            try self.prepareAudio()
+        }catch _{
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,7 +84,11 @@ class PlayerViewController: UIViewController {
         //initialize the AVAudioPlayer
         var path=NSBundle.mainBundle().pathForResource(soundName, ofType: type)
         var error:NSError?
-        catchphrase=AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!), error: &error)
+        do{
+        try catchphrase=AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
+        } catch _{
+            
+        }
     }
     
     //play catchphrase

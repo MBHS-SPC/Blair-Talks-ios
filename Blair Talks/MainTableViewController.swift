@@ -54,7 +54,7 @@ class MainTableViewController: UITableViewController {
     
     //Sets up all of the cells. Will eventually use an array.
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("personCell") as! UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("personCell") as! UITableViewCell!
 
         // Configure the cell...
         cell.textLabel!.text=people[indexPath.row]
@@ -104,7 +104,7 @@ class MainTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-        let indexPath=tableView.indexPathForSelectedRow()
+        let indexPath=tableView.indexPathForSelectedRow
         let currentCell=tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
         //println(currentCell.textLabel!.text!)
         let vc=segue.destinationViewController as! PlayerViewController
