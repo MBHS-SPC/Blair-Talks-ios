@@ -28,11 +28,7 @@ class PlayerViewController: UIViewController {
         backgroundView.clipsToBounds=true
         backgroundView.image=UIImage(named: imgName)
         backgroundView.center=view.center
-        do {
-            try self.prepareAudio()
-        }catch _{
-            
-        }
+        prepareAudio()
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,20 +75,19 @@ class PlayerViewController: UIViewController {
     }
     
     func prepareAudio(){
-        var type:String="mp3"   //may be needed later
+        let type:String="mp3"   //may be needed later
         
         //initialize the AVAudioPlayer
-        var path=NSBundle.mainBundle().pathForResource(soundName, ofType: type)
-        var error:NSError?
+        let path=NSBundle.mainBundle().pathForResource(soundName, ofType: type)
         do{
         try catchphrase=AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
         } catch _{
-            
+            //constructor can throw an error, but we want a crash if the file isn't there
         }
     }
     
     //play catchphrase
-    @IBAction func playSound(sender: AnyObject) {
+    @IBAction func playSound(sender: AnyObject) {   //called by the Tap Gesture Recognizer which is on the storyboard
         //println("about to play")
         catchphrase.prepareToPlay()
         catchphrase.play()

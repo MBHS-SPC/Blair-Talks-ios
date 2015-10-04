@@ -54,7 +54,7 @@ class MainTableViewController: UITableViewController {
     
     //Sets up all of the cells. Will eventually use an array.
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("personCell") as! UITableViewCell!
+        var cell = tableView.dequeueReusableCellWithIdentifier("personCell") as UITableViewCell!
 
         // Configure the cell...
         cell.textLabel!.text=people[indexPath.row]
