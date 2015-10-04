@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FBE1EF57-0F47-4ABA-90F8-2147489B09CD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>078622200A18C7BBFA74F581B2C156B71E694AAD</key>
+		<string>https://github.com/qscgy/Blair-Talks.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Blair Talks.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>078622200A18C7BBFA74F581B2C156B71E694AAD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/qscgy/Blair-Talks.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>078622200A18C7BBFA74F581B2C156B71E694AAD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>078622200A18C7BBFA74F581B2C156B71E694AAD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Blair%20Talks</string>
+		</dict>
+	</array>
+</dict>
+</plist>
