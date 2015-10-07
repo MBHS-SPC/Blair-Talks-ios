@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Done in MainTableViewController.prepareforSegue
+    /*
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier=="showRose"{
             if let destination=segue.destinationViewController as? PlayerViewController {
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    */
 
 
 }

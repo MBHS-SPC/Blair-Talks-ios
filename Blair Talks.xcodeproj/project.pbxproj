@@ -40,6 +40,20 @@
 		22B71B191BAA471F00FD3F2B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B71B181BAA471F00FD3F2B /* MenuView.swift */; };
 		22B71B1C1BAA4EFB00FD3F2B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B71B1A1BAA4EFB00FD3F2B /* PlayerViewController.swift */; };
 		22B71B1D1BAA4EFB00FD3F2B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B71B1B1BAA4EFB00FD3F2B /* PlayerViewController.xib */; };
+		22D23E091BC4A1BF0013B5A9 /* duval.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23DFB1BC4A1BF0013B5A9 /* duval.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E0A1BC4A1BF0013B5A9 /* dvorsky.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23DFC1BC4A1BF0013B5A9 /* dvorsky.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E0B1BC4A1BF0013B5A9 /* fowler.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23DFD1BC4A1BF0013B5A9 /* fowler.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E0C1BC4A1BF0013B5A9 /* giles.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23DFE1BC4A1BF0013B5A9 /* giles.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E0D1BC4A1BF0013B5A9 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D23DFF1BC4A1BF0013B5A9 /* ic_launcher.png */; settings = {ASSET_TAGS = (); }; };
+		22D23E0E1BC4A1BF0013B5A9 /* ostrander.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E001BC4A1BF0013B5A9 /* ostrander.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E0F1BC4A1BF0013B5A9 /* pham.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E011BC4A1BF0013B5A9 /* pham.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E101BC4A1BF0013B5A9 /* piper.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E021BC4A1BF0013B5A9 /* piper.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E111BC4A1BF0013B5A9 /* rose.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E031BC4A1BF0013B5A9 /* rose.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E121BC4A1BF0013B5A9 /* rosestache.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E041BC4A1BF0013B5A9 /* rosestache.jpg */; settings = {ASSET_TAGS = (); }; };
+		22D23E131BC4A1BF0013B5A9 /* rosestachecopy.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E051BC4A1BF0013B5A9 /* rosestachecopy.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E141BC4A1BF0013B5A9 /* schafer.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E061BC4A1BF0013B5A9 /* schafer.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E151BC4A1BF0013B5A9 /* stein.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E071BC4A1BF0013B5A9 /* stein.JPG */; settings = {ASSET_TAGS = (); }; };
+		22D23E161BC4A1BF0013B5A9 /* street.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E081BC4A1BF0013B5A9 /* street.JPG */; settings = {ASSET_TAGS = (); }; };
 		22D2672F1BAB7C6E0096DD38 /* rose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22D2672E1BAB7C6E0096DD38 /* rose.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +105,20 @@
 		22B71B181BAA471F00FD3F2B /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		22B71B1A1BAA4EFB00FD3F2B /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerViewController.swift; path = ../PlayerViewController.swift; sourceTree = "<group>"; };
 		22B71B1B1BAA4EFB00FD3F2B /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayerViewController.xib; path = ../PlayerViewController.xib; sourceTree = "<group>"; };
+		22D23DFB1BC4A1BF0013B5A9 /* duval.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = duval.JPG; sourceTree = "<group>"; };
+		22D23DFC1BC4A1BF0013B5A9 /* dvorsky.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dvorsky.JPG; sourceTree = "<group>"; };
+		22D23DFD1BC4A1BF0013B5A9 /* fowler.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fowler.JPG; sourceTree = "<group>"; };
+		22D23DFE1BC4A1BF0013B5A9 /* giles.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giles.JPG; sourceTree = "<group>"; };
+		22D23DFF1BC4A1BF0013B5A9 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		22D23E001BC4A1BF0013B5A9 /* ostrander.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ostrander.JPG; sourceTree = "<group>"; };
+		22D23E011BC4A1BF0013B5A9 /* pham.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pham.JPG; sourceTree = "<group>"; };
+		22D23E021BC4A1BF0013B5A9 /* piper.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piper.JPG; sourceTree = "<group>"; };
+		22D23E031BC4A1BF0013B5A9 /* rose.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rose.JPG; sourceTree = "<group>"; };
+		22D23E041BC4A1BF0013B5A9 /* rosestache.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rosestache.jpg; sourceTree = "<group>"; };
+		22D23E051BC4A1BF0013B5A9 /* rosestachecopy.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rosestachecopy.JPG; sourceTree = "<group>"; };
+		22D23E061BC4A1BF0013B5A9 /* schafer.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schafer.JPG; sourceTree = "<group>"; };
+		22D23E071BC4A1BF0013B5A9 /* stein.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stein.JPG; sourceTree = "<group>"; };
+		22D23E081BC4A1BF0013B5A9 /* street.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street.JPG; sourceTree = "<group>"; };
 		22D2672E1BAB7C6E0096DD38 /* rose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rose.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +160,20 @@
 		2285316D1BAB9F2B00B09957 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				22D23DFB1BC4A1BF0013B5A9 /* duval.JPG */,
+				22D23DFC1BC4A1BF0013B5A9 /* dvorsky.JPG */,
+				22D23DFD1BC4A1BF0013B5A9 /* fowler.JPG */,
+				22D23DFE1BC4A1BF0013B5A9 /* giles.JPG */,
+				22D23DFF1BC4A1BF0013B5A9 /* ic_launcher.png */,
+				22D23E001BC4A1BF0013B5A9 /* ostrander.JPG */,
+				22D23E011BC4A1BF0013B5A9 /* pham.JPG */,
+				22D23E021BC4A1BF0013B5A9 /* piper.JPG */,
+				22D23E031BC4A1BF0013B5A9 /* rose.JPG */,
+				22D23E041BC4A1BF0013B5A9 /* rosestache.jpg */,
+				22D23E051BC4A1BF0013B5A9 /* rosestachecopy.JPG */,
+				22D23E061BC4A1BF0013B5A9 /* schafer.JPG */,
+				22D23E071BC4A1BF0013B5A9 /* stein.JPG */,
+				22D23E081BC4A1BF0013B5A9 /* street.JPG */,
 				2285316E1BAB9F6300B09957 /* duval_small.jpg */,
 				2285316F1BAB9F6300B09957 /* dvorsky_small.jpg */,
 				228531701BAB9F6300B09957 /* fowler_small.jpg */,
@@ -294,33 +336,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D23E121BC4A1BF0013B5A9 /* rosestache.jpg in Resources */,
+				22D23E0A1BC4A1BF0013B5A9 /* dvorsky.JPG in Resources */,
 				228531841BAB9F6300B09957 /* stein_small.jpg in Resources */,
+				22D23E0C1BC4A1BF0013B5A9 /* giles.JPG in Resources */,
 				228531631BAB9B6C00B09957 /* ostrander_.mp3 in Resources */,
 				22B71AF81BAA3C0600FD3F2B /* Main.storyboard in Resources */,
 				228531871BABA03300B09957 /* nothere_small.jpg in Resources */,
 				22D2672F1BAB7C6E0096DD38 /* rose.mp3 in Resources */,
 				22B71B1D1BAA4EFB00FD3F2B /* PlayerViewController.xib in Resources */,
 				2285315F1BAB9A7100B09957 /* pham_.mp3 in Resources */,
+				22D23E0B1BC4A1BF0013B5A9 /* fowler.JPG in Resources */,
 				22B71AFD1BAA3C0600FD3F2B /* LaunchScreen.xib in Resources */,
 				228531651BAB9B7400B09957 /* giles_.mp3 in Resources */,
+				22D23E111BC4A1BF0013B5A9 /* rose.JPG in Resources */,
+				22D23E141BC4A1BF0013B5A9 /* schafer.JPG in Resources */,
 				2285317F1BAB9F6300B09957 /* pham_small.jpg in Resources */,
 				22B71AFA1BAA3C0600FD3F2B /* Images.xcassets in Resources */,
+				22D23E161BC4A1BF0013B5A9 /* street.JPG in Resources */,
 				228531821BAB9F6300B09957 /* rosestache_small.jpg in Resources */,
 				2285316C1BAB9D2800B09957 /* paul.mp3 in Resources */,
 				228531691BAB9BF600B09957 /* nothere.mp3 in Resources */,
 				2285317D1BAB9F6300B09957 /* giles_small.jpg in Resources */,
 				2285317A1BAB9F6300B09957 /* duval_small.jpg in Resources */,
+				22D23E0E1BC4A1BF0013B5A9 /* ostrander.JPG in Resources */,
+				22D23E091BC4A1BF0013B5A9 /* duval.JPG in Resources */,
 				228531831BAB9F6300B09957 /* schafer_small.jpg in Resources */,
 				228531671BAB9B8600B09957 /* schafer_.mp3 in Resources */,
 				2285317C1BAB9F6300B09957 /* fowler_small.jpg in Resources */,
+				22D23E151BC4A1BF0013B5A9 /* stein.JPG in Resources */,
+				22D23E101BC4A1BF0013B5A9 /* piper.JPG in Resources */,
 				2285318B1BABB08F00B09957 /* stein.mp3 in Resources */,
 				228531801BAB9F6300B09957 /* piper_small.jpg in Resources */,
 				2285317B1BAB9F6300B09957 /* dvorsky_small.jpg in Resources */,
 				2285317E1BAB9F6300B09957 /* ostrander_small.jpg in Resources */,
+				22D23E131BC4A1BF0013B5A9 /* rosestachecopy.JPG in Resources */,
 				228531811BAB9F6300B09957 /* rose_small.jpg in Resources */,
 				228531891BABB02C00B09957 /* street.mp3 in Resources */,
 				228531851BAB9F6300B09957 /* street_small.jpg in Resources */,
 				2285315D1BAB9A6900B09957 /* duval_.mp3 in Resources */,
+				22D23E0D1BC4A1BF0013B5A9 /* ic_launcher.png in Resources */,
+				22D23E0F1BC4A1BF0013B5A9 /* pham.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,10 +531,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Blair Talks/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.mbhs.spc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -488,10 +545,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Blair Talks/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.mbhs.spc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
