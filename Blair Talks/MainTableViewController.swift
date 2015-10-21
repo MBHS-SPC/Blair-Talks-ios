@@ -10,11 +10,11 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    let people=["Ms. Duval","Mr. Giles","Mr. Paul", "Mr. Pham","Mr. Rose","Mr. Schafer","Mr. Stein","Mr. Street"]
+    let people=["Ms. Duval","Mr. Giles","Mr. Ostrander","Mr. Paul", "Mr. Pham","Mr. Rose","Mr. Schafer","Mr. Stein","Mr. Street"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //people=people.reverse()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
