@@ -80,7 +80,7 @@ class PlayerViewController: UIViewController {
         //initialize the AVAudioPlayer
         let path=NSBundle.mainBundle().pathForResource(soundName, ofType: type)
         do{
-        try catchphrase=AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
+            try catchphrase=AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
         } catch _{
             //constructor can throw an error, but we want it to crash if it doesn't work
         }
