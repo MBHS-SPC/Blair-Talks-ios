@@ -38,53 +38,56 @@ class PlayerViewController: UIViewController {
     
     //initialize the sound and image filenames
     func setupNames(){
-        //get the audio filename for a given person
+        //get the audio and image filenames for a given person
         switch subjectName{
         case "Mr. Rose":
             soundName="rose"
-            imgName="rose_"
+            imgName="rose.JPG"
         case "Mr. Paul":
             soundName="paul"
-            imgName="nothere_"
+            imgName="nothere_small.jpg"
         case "Mr. Pham":
             soundName="pham_"
-            imgName="pham_"
+            imgName="pham.JPG"
         case "Ms. Duval":
             soundName="duval_"
-            imgName="duval_"
+            imgName="duval.JPG"
         case "Mr. Giles":
             soundName="giles_"
-            imgName="giles_"
+            imgName="giles.JPG"
         case "Mr. Ostrander":
             soundName="ostrander_"
-            imgName="ostrander"
+            imgName="ostrander.JPG"
         case "Mr. Stein":
             soundName="stein"
-            imgName="stein_"
+            imgName="stein.JPG"
         case "Mr. Street":
             soundName="street"
-            imgName="street_"
+            imgName="street.JPG"
         case "Mr. Schafer":
             soundName="schafer_"
-            imgName="schafer_"
+            imgName="schafer.JPG"
         default:
             soundName="nothere"
-            imgName="nothere_"
+            imgName="nothere_small.jpg"
         }
-        imgName+="small.jpg"
+        //imgName+="small.jpg"
     }
     
     func prepareAudio(){
-        var type:String="mp3"   //may be needed later
+        let type:String="mp3"   //may be needed later
         
         //initialize the AVAudioPlayer
-        var path=NSBundle.mainBundle().pathForResource(soundName, ofType: type)
-        var error:NSError?
-        catchphrase=AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!), error: &error)
+        let path=NSBundle.mainBundle().pathForResource(soundName, ofType: type)
+        do{
+        try catchphrase=AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
+        } catch _{
+            //constructor can throw an error, but we want it to crash if it doesn't work
+        }
     }
     
     //play catchphrase
-    @IBAction func playSound(sender: AnyObject) {
+    @IBAction func playSound(sender: AnyObject) {   //called by the Tap Gesture Recognizer which is on the storyboard
         //println("about to play")
         catchphrase.prepareToPlay()
         catchphrase.play()
