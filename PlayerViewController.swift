@@ -45,7 +45,7 @@ class PlayerViewController: UIViewController {
             imgName="rose.JPG"
         case "Mr. Paul":
             soundName="paul"
-            imgName="nothere_small.jpg"
+            imgName="paul.JPG"
         case "Mr. Pham":
             soundName="pham_"
             imgName="pham.JPG"
@@ -75,7 +75,11 @@ class PlayerViewController: UIViewController {
     }
     
     func prepareAudio(){
-        let type:String="mp3"   //may be needed later
+        var type:String="mp3"   //may be needed later
+        
+        if soundName=="paul"{
+            type="aiff"
+        }
         
         //initialize the AVAudioPlayer
         let path=NSBundle.mainBundle().pathForResource(soundName, ofType: type)
