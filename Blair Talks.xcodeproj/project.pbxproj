@@ -54,7 +54,6 @@
 		22D23E151BC4A1BF0013B5A9 /* stein.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E071BC4A1BF0013B5A9 /* stein.JPG */; settings = {ASSET_TAGS = (); }; };
 		22D23E161BC4A1BF0013B5A9 /* street.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E081BC4A1BF0013B5A9 /* street.JPG */; settings = {ASSET_TAGS = (); }; };
 		22D2672F1BAB7C6E0096DD38 /* rose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22D2672E1BAB7C6E0096DD38 /* rose.mp3 */; };
-		FBEBFE611BDA994400AD7F63 /* paul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBEBFE601BDA994400AD7F63 /* paul.mp3 */; settings = {ASSET_TAGS = (); }; };
 		FBF045151BDAD4B60076CDAB /* paul.aiff in Resources */ = {isa = PBXBuildFile; fileRef = FBF045141BDAD4B60076CDAB /* paul.aiff */; settings = {ASSET_TAGS = (); }; };
 		FBF045171BDAD4ED0076CDAB /* paul.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FBF045161BDAD4ED0076CDAB /* paul.JPG */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -121,7 +120,6 @@
 		22D23E071BC4A1BF0013B5A9 /* stein.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stein.JPG; sourceTree = "<group>"; };
 		22D23E081BC4A1BF0013B5A9 /* street.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street.JPG; sourceTree = "<group>"; };
 		22D2672E1BAB7C6E0096DD38 /* rose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rose.mp3; sourceTree = "<group>"; };
-		FBEBFE601BDA994400AD7F63 /* paul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = paul.mp3; path = ../../paul.mp3; sourceTree = "<group>"; };
 		FBF045141BDAD4B60076CDAB /* paul.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = paul.aiff; sourceTree = "<group>"; };
 		FBF045161BDAD4ED0076CDAB /* paul.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paul.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,7 +150,6 @@
 				228531641BAB9B7400B09957 /* giles_.mp3 */,
 				FBF045141BDAD4B60076CDAB /* paul.aiff */,
 				22D2672E1BAB7C6E0096DD38 /* rose.mp3 */,
-				FBEBFE601BDA994400AD7F63 /* paul.mp3 */,
 				2285318A1BABB08F00B09957 /* stein.mp3 */,
 				2285315C1BAB9A6900B09957 /* duval_.mp3 */,
 				228531881BABB02C00B09957 /* street.mp3 */,
@@ -384,7 +381,6 @@
 				2285315D1BAB9A6900B09957 /* duval_.mp3 in Resources */,
 				22D23E0D1BC4A1BF0013B5A9 /* ic_launcher.png in Resources */,
 				22D23E0F1BC4A1BF0013B5A9 /* pham.JPG in Resources */,
-				FBEBFE611BDA994400AD7F63 /* paul.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,9 +535,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Blair Talks/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.mbhs.spc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbhs.spc.blairtalks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -553,9 +549,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Blair Talks/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.mbhs.spc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbhs.spc.blairtalks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
