@@ -54,9 +54,9 @@
 		22D23E151BC4A1BF0013B5A9 /* stein.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E071BC4A1BF0013B5A9 /* stein.JPG */; settings = {ASSET_TAGS = (); }; };
 		22D23E161BC4A1BF0013B5A9 /* street.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22D23E081BC4A1BF0013B5A9 /* street.JPG */; settings = {ASSET_TAGS = (); }; };
 		22D2672F1BAB7C6E0096DD38 /* rose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22D2672E1BAB7C6E0096DD38 /* rose.mp3 */; };
-		FB693C5B1BDA9A880027CC14 /* paul.aiff in Resources */ = {isa = PBXBuildFile; fileRef = FB693C5A1BDA9A880027CC14 /* paul.aiff */; settings = {ASSET_TAGS = (); }; };
 		FBEBFE611BDA994400AD7F63 /* paul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBEBFE601BDA994400AD7F63 /* paul.mp3 */; settings = {ASSET_TAGS = (); }; };
-		FBEBFE631BDA994B00AD7F63 /* paul.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FBEBFE621BDA994B00AD7F63 /* paul.JPG */; settings = {ASSET_TAGS = (); }; };
+		FBF045151BDAD4B60076CDAB /* paul.aiff in Resources */ = {isa = PBXBuildFile; fileRef = FBF045141BDAD4B60076CDAB /* paul.aiff */; settings = {ASSET_TAGS = (); }; };
+		FBF045171BDAD4ED0076CDAB /* paul.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FBF045161BDAD4ED0076CDAB /* paul.JPG */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,9 +121,9 @@
 		22D23E071BC4A1BF0013B5A9 /* stein.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stein.JPG; sourceTree = "<group>"; };
 		22D23E081BC4A1BF0013B5A9 /* street.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = street.JPG; sourceTree = "<group>"; };
 		22D2672E1BAB7C6E0096DD38 /* rose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rose.mp3; sourceTree = "<group>"; };
-		FB693C5A1BDA9A880027CC14 /* paul.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = paul.aiff; path = ../../paul.aiff; sourceTree = "<group>"; };
 		FBEBFE601BDA994400AD7F63 /* paul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = paul.mp3; path = ../../paul.mp3; sourceTree = "<group>"; };
-		FBEBFE621BDA994B00AD7F63 /* paul.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = paul.JPG; path = ../../../Downloads/paul.JPG; sourceTree = "<group>"; };
+		FBF045141BDAD4B60076CDAB /* paul.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = paul.aiff; sourceTree = "<group>"; };
+		FBF045161BDAD4ED0076CDAB /* paul.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paul.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +147,10 @@
 		2285316A1BAB9D1100B09957 /* audio */ = {
 			isa = PBXGroup;
 			children = (
-				FB693C5A1BDA9A880027CC14 /* paul.aiff */,
 				2285315E1BAB9A7100B09957 /* pham_.mp3 */,
 				228531621BAB9B6C00B09957 /* ostrander_.mp3 */,
 				228531641BAB9B7400B09957 /* giles_.mp3 */,
+				FBF045141BDAD4B60076CDAB /* paul.aiff */,
 				22D2672E1BAB7C6E0096DD38 /* rose.mp3 */,
 				FBEBFE601BDA994400AD7F63 /* paul.mp3 */,
 				2285318A1BABB08F00B09957 /* stein.mp3 */,
@@ -165,10 +165,10 @@
 		2285316D1BAB9F2B00B09957 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				FBEBFE621BDA994B00AD7F63 /* paul.JPG */,
 				22D23DFB1BC4A1BF0013B5A9 /* duval.JPG */,
 				22D23DFC1BC4A1BF0013B5A9 /* dvorsky.JPG */,
 				22D23DFD1BC4A1BF0013B5A9 /* fowler.JPG */,
+				FBF045161BDAD4ED0076CDAB /* paul.JPG */,
 				22D23DFE1BC4A1BF0013B5A9 /* giles.JPG */,
 				22D23DFF1BC4A1BF0013B5A9 /* ic_launcher.png */,
 				22D23E001BC4A1BF0013B5A9 /* ostrander.JPG */,
@@ -344,6 +344,7 @@
 			files = (
 				22D23E121BC4A1BF0013B5A9 /* rosestache.jpg in Resources */,
 				22D23E0A1BC4A1BF0013B5A9 /* dvorsky.JPG in Resources */,
+				FBF045151BDAD4B60076CDAB /* paul.aiff in Resources */,
 				228531841BAB9F6300B09957 /* stein_small.jpg in Resources */,
 				22D23E0C1BC4A1BF0013B5A9 /* giles.JPG in Resources */,
 				228531631BAB9B6C00B09957 /* ostrander_.mp3 in Resources */,
@@ -359,6 +360,7 @@
 				22D23E141BC4A1BF0013B5A9 /* schafer.JPG in Resources */,
 				2285317F1BAB9F6300B09957 /* pham_small.jpg in Resources */,
 				22B71AFA1BAA3C0600FD3F2B /* Images.xcassets in Resources */,
+				FBF045171BDAD4ED0076CDAB /* paul.JPG in Resources */,
 				22D23E161BC4A1BF0013B5A9 /* street.JPG in Resources */,
 				228531821BAB9F6300B09957 /* rosestache_small.jpg in Resources */,
 				228531691BAB9BF600B09957 /* nothere.mp3 in Resources */,
@@ -374,9 +376,7 @@
 				2285318B1BABB08F00B09957 /* stein.mp3 in Resources */,
 				228531801BAB9F6300B09957 /* piper_small.jpg in Resources */,
 				2285317B1BAB9F6300B09957 /* dvorsky_small.jpg in Resources */,
-				FB693C5B1BDA9A880027CC14 /* paul.aiff in Resources */,
 				2285317E1BAB9F6300B09957 /* ostrander_small.jpg in Resources */,
-				FBEBFE631BDA994B00AD7F63 /* paul.JPG in Resources */,
 				22D23E131BC4A1BF0013B5A9 /* rosestachecopy.JPG in Resources */,
 				228531811BAB9F6300B09957 /* rose_small.jpg in Resources */,
 				228531891BABB02C00B09957 /* street.mp3 in Resources */,
