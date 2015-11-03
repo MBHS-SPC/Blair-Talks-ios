@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KC0-A3-pu2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KC0-A3-pu2">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main Table View Controller-->
@@ -62,41 +63,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kqo-rX-GXv">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="44" width="400" height="556"/>
-                                </variation>
+                            <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6r-Wq-dGL">
+                                <rect key="frame" x="0.0" y="384" width="600" height="216"/>
+                            </pickerView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rBd-mr-9kW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="L4O-jQ-Vml" appends="YES" id="yuv-r3-tSr"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Kqo-rX-GXv"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="Kqo-rX-GXv"/>
-                            </mask>
-                        </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Qtk-zs-57C" appends="YES" id="Us2-5n-Whb"/>
-                        </connections>
+                        <constraints>
+                            <constraint firstItem="rBd-mr-9kW" firstAttribute="top" secondItem="mVk-Jx-lhB" secondAttribute="bottom" constant="-64" id="5IW-5o-sRQ"/>
+                            <constraint firstItem="zbx-Qm-IoB" firstAttribute="top" secondItem="X6r-Wq-dGL" secondAttribute="bottom" id="HA6-SG-Y8H"/>
+                            <constraint firstItem="rBd-mr-9kW" firstAttribute="leading" secondItem="L2A-7k-VeB" secondAttribute="leadingMargin" constant="-20" id="IYy-pa-yCB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rBd-mr-9kW" secondAttribute="trailing" constant="-20" id="NE1-Hj-bck"/>
+                            <constraint firstItem="X6r-Wq-dGL" firstAttribute="leading" secondItem="L2A-7k-VeB" secondAttribute="leadingMargin" constant="-20" id="kPt-Ei-jJh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X6r-Wq-dGL" secondAttribute="trailing" constant="-20" id="sMK-gd-Jfy"/>
+                            <constraint firstItem="zbx-Qm-IoB" firstAttribute="top" secondItem="rBd-mr-9kW" secondAttribute="bottom" id="wQp-cl-UEP"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="Kqo-rX-GXv" id="jfU-z8-nlh"/>
+                        <outlet property="backgroundView" destination="rBd-mr-9kW" id="pbJ-LY-ItO"/>
+                        <outlet property="soundSelector" destination="X6r-Wq-dGL" id="MEq-te-h62"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="If9-ue-0QQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Qtk-zs-57C">
+                <tapGestureRecognizer id="L4O-jQ-Vml">
                     <connections>
-                        <action selector="playSound:" destination="z5i-bc-D4B" id="oXN-Kb-HWo"/>
+                        <action selector="playSound:" destination="z5i-bc-D4B" id="TLD-3j-gXM"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4537.5" y="511"/>
+            <point key="canvasLocation" x="4537" y="511"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KUf-XV-Htf">

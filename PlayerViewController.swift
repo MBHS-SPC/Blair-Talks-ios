@@ -10,15 +10,23 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class PlayerViewController: UIViewController {
+class PlayerViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     
+    @IBOutlet var backgroundView:UIImageView!
     var catchphrase:AVAudioPlayer!
     var soundName:String=""
     var imgName:String=""
     
+    //soundTitles is the data for the picker
+    //it must have identical elements to sounds.keys
+    var soundTitles=[String]()
+    
+    //maps each sound title to its corresponding sound
+    var sounds=[String: String]()
+    @IBOutlet var soundSelector:UIPickerView!
+    
    // @IBOutlet weak var nameLabel: UILabel!
     var subjectName:String=""
-    @IBOutlet var backgroundView:UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +36,12 @@ class PlayerViewController: UIViewController {
         backgroundView.clipsToBounds=true
         backgroundView.image=UIImage(named: imgName)
         backgroundView.center=view.center
+        
+        soundSelector.dataSource=self
+        soundSelector.delegate=self
+        
+        view.sendSubviewToBack(backgroundView)
+        
         prepareAudio()
     }
     
@@ -41,7 +55,8 @@ class PlayerViewController: UIViewController {
         //get the audio and image filenames for a given person
         switch subjectName{
         case "Mr. Rose":
-            soundName="rose"
+            soundTitles=["Alright!"]
+            sounds=["Alright!":"rose"]
             imgName="rose.JPG"
         case "Mr. Paul":
             soundName="paul"
@@ -59,7 +74,8 @@ class PlayerViewController: UIViewController {
             soundName="ostrander_"
             imgName="ostrander.JPG"
         case "Mr. Stein":
-            soundName="stein"
+            soundTitles=["Follow","Bam!"]
+            sounds=["Bam!":"nothere","Follow":"stein"]
             imgName="stein.JPG"
         case "Mr. Street":
             soundName="street"
@@ -71,7 +87,25 @@ class PlayerViewController: UIViewController {
             soundName="nothere"
             imgName="nothere_small.jpg"
         }
+        soundName=sounds[soundTitles[0]]!
         //imgName+="small.jpg"
+    }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return soundTitles.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return soundTitles[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        soundName=sounds[soundTitles[row]]!
+        prepareAudio()
     }
     
     func prepareAudio(){
@@ -88,12 +122,14 @@ class PlayerViewController: UIViewController {
         } catch _{
             //constructor can throw an error, but we want it to crash if it doesn't work
         }
+        //print(">\(soundName)")
     }
     
     //play catchphrase
     @IBAction func playSound(sender: AnyObject) {   //called by the Tap Gesture Recognizer which is on the storyboard
         //println("about to play")
         catchphrase.prepareToPlay()
+        //print(soundName)
         catchphrase.play()
     }
     
