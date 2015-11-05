@@ -16,6 +16,7 @@ class PlayerViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     var catchphrase:AVAudioPlayer!
     var soundName:String=""
     var imgName:String=""
+    var dubstepMash=false
     
     //soundTitles is the data for the picker
     //it must have identical elements to sounds.keys
@@ -39,6 +40,7 @@ class PlayerViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
         
         soundSelector.dataSource=self
         soundSelector.delegate=self
+        soundSelector.backgroundColor=UIColor(white: 1, alpha: 0.1)
         
         view.sendSubviewToBack(backgroundView)
         
@@ -59,35 +61,45 @@ class PlayerViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
             sounds=["Alright!":"rose"]
             imgName="rose.JPG"
         case "Mr. Paul":
-            soundName="paul"
+            soundTitles=["Enlighten us"]
+            sounds=["Enlighten us":"paul"]
             imgName="paul.JPG"
-        case "Mr. Pham":
-            soundName="pham_"
-            imgName="pham.JPG"
         case "Ms. Duval":
-            soundName="duval_"
+            soundTitles=["Crapton is an SI unit"]
+            sounds=["Crapton is an SI unit":"duval_"]
             imgName="duval.JPG"
         case "Mr. Giles":
-            soundName="giles_"
+            soundTitles=["Easiest thing ever"]
+            sounds=["Easiest thing ever":"giles_"]
             imgName="giles.JPG"
         case "Mr. Ostrander":
-            soundName="ostrander_"
+            soundTitles=["This is discreet math"]
+            sounds=["This is discreet math":"ostrander_"]
             imgName="ostrander.JPG"
         case "Mr. Stein":
-            soundTitles=["Follow","Bam!"]
-            sounds=["Bam!":"nothere","Follow":"stein"]
+            soundTitles=["Follow","Bam! Bam!"]
+            sounds=["Bam! Bam!":"stein_bam","Follow":"stein"]
             imgName="stein.JPG"
         case "Mr. Street":
-            soundName="street"
+            soundTitles=["Suffer"]
+            sounds=["Suffer":"street"]
             imgName="street.JPG"
         case "Mr. Schafer":
-            soundName="schafer_"
+            soundTitles=["It's not my dog"]
+            sounds=["It's not my dog":"schafer_"]
             imgName="schafer.JPG"
+        case "PHAM ROSE DUBSTEP MASH":
+            soundTitles=["This iAlright!"]
+            sounds=["This iAlright!":"phamrose"]
+            imgName="rosestache.jpg"
+            dubstepMash=true
         default:
-            soundName="nothere"
-            imgName="nothere_small.jpg"
+            soundTitles=["This is ridiculous"]
+            sounds=["This is ridiculous":"pham_"]
+            imgName="pham.JPG"
+
         }
-        soundName=sounds[soundTitles[0]]!
+        soundName=sounds[soundTitles[0]]!   //set soundName to the default picker option
         //imgName+="small.jpg"
     }
     
@@ -127,10 +139,12 @@ class PlayerViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDa
     
     //play catchphrase
     @IBAction func playSound(sender: AnyObject) {   //called by the Tap Gesture Recognizer which is on the storyboard
-        //println("about to play")
         catchphrase.prepareToPlay()
-        //print(soundName)
+        if(dubstepMash){
+           catchphrase.numberOfLoops = -1
+        }
         catchphrase.play()
+        //print("done")
     }
     
     /*

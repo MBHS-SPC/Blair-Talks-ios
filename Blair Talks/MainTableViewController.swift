@@ -10,7 +10,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    let people=["Ms. Duval","Mr. Giles","Mr. Ostrander","Mr. Paul", "Mr. Pham","Mr. Rose","Mr. Schafer","Mr. Stein","Mr. Street"]
+    let people=["Ms. Duval","Mr. Giles","Mr. Ostrander","Mr. Paul", "Mr. Pham","Mr. Rose","Mr. Schafer","Mr. Stein","Mr. Street","PHAM ROSE DUBSTEP MASH"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class MainTableViewController: UITableViewController {
     
     //Sets up all of the cells.
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("personCell") as UITableViewCell!
+        let cell = tableView.dequeueReusableCellWithIdentifier("personCell") as UITableViewCell!
 
         // Configure the cell...
         cell.textLabel!.text=people[indexPath.row]
@@ -108,6 +108,7 @@ class MainTableViewController: UITableViewController {
         let currentCell=tableView.cellForRowAtIndexPath(indexPath!) as UITableViewCell!
         //println(currentCell.textLabel!.text!)
         let vc=segue.destinationViewController as! PlayerViewController
+        //print(currentCell.textLabel!.text!)
         vc.subjectName=currentCell.textLabel!.text!
     }
 
